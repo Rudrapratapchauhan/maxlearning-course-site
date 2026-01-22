@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Courses</h2>
+{% for article in articles %}
+<a href="/{{ article.url }}">{{ article.title }}</a>
+{% endfor %}
+{% endblock %}
